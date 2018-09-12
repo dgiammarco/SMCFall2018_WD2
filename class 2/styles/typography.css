@@ -1,6 +1,8 @@
+
 /* Header styles*/
 h1 {
-    color: red;
+    color: rgb(0, 255, 221);
+    font-family: 'Slabo 27px', serif;
 }
 /*List styles*/
 
@@ -15,4 +17,5 @@ li{
 /* anchors and links */
 a{
 font-size: 30px;
+    text-decoration:none;
 }
