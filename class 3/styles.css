@@ -5,16 +5,26 @@ main {
 }
 
 .fullcard {
-    width: 45%;
-}
-
-.fullcard:first-child {
+    width: 33%;
     float: left;
+    margin: 10px;
 }
 
-.fullcard:nth-child(2) {
-    float: right;
+.fullcard-text {
+    width: 33%
+    float: left; 
+    padding-top:1px; 
+    padding-right:10px;
 }
+
+.large-column {
+    width: 960px; 
+    height: 250px;
+    background-color:lightyellow;
+    overflow: scroll; 
+    margin-top:10px;
+}
+
 
 .clearfix {
     clear: both;
@@ -22,4 +32,13 @@ main {
 }
 .fullcard img {
     width: 100%;
+}
+.h1.one
+{
+position: fixed;
+}
+
+.p.one    
+{
+overflow: scroll;
 }
