@@ -1,0 +1,99 @@
+body {
+    margin: 0px;
+}
+
+ul {
+    list-style-type: none; 
+    margin: 0px;
+}
+li
+{   display: inline-block;
+    font-size: 18;
+}
+nav {
+    background-color: rgb(250, 193, 186);
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    z-index: 1;
+    opacity: .9;
+}
+main {
+    margin-top: 58px;
+    width:768px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(145, 105, 255);
+
+}
+.r-position1 
+ {
+
+    position: relative;
+    width: 400;
+    height: 1150px;
+    background-color: bisque;
+    left: 100px;
+    top: 50px;
+    opacity: .5;
+}
+.h1
+{
+    position: fixed;
+    top: 450;
+    left: 350;
+}
+.a-position1 {
+    transform: rotate(90deg);
+    transform-origin: left top 0;
+    position: absolute;
+    width: 300px;
+    height: 650px;
+    background-color: dodgerblue;
+    top: 90px;
+    left: 650px;
+    opacity: 40;
+
+}
+.a-position2
+ {
+        position: absolute;
+        width: 58px;
+        height: 950px;
+        background-color: rgb(255, 139, 30);
+        top: -110px;
+        left: -170px;
+        opacity: .5;
+    }
+
+.a-position2b {
+        position: absolute;
+        width: 50px;
+        height: 350px;
+        background-color: rgb(255, 139, 30);
+        top: 90px;
+        left: 30px;
+        opacity: .5;
+    
+}
+.a-position2c {
+    position: absolute;
+    width: 350px;
+    height: 50px;
+    background-color: rgb(255, 139, 30);
+    top: 219px;
+    left: 9px;
+    opacity: .5;
+}
+
+.h1 {
+
+    position: fixed;
+    top: 190;
+    left: 450;
+    font-family: helvetica;
+    background: blanchedalmond;
+    font-weight: bolder;
+
+}
