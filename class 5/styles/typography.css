@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+p
+{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 24px;
+    /* will effect the size of your element. Highlight + Command/ to make comments */
+    letter-spacing: 1.1px;
+    font-size: 14px;
+    /* font-variant: is designed for the font, font-weight will add or subtract weight automatically */
+    
+    /* font-style: will include automated defaults */
+}
+p::first-letter {
+    font-size: 40px;
+    vertical-align: text-top;
+    margin-left: -25
+}
+p::first-line {
+    background-color: darkgoldenrod;
+}
