@@ -1,0 +1,105 @@
+
+@import url("typography.css");
+    .page-wrap {
+        width: 100%
+    }
+
+    nav {
+        background-color: rgb(196, 196, 196);
+        padding: 20px;
+        position: fixed;
+        width: 100%;
+        top: 0px;
+        z-index: 1;
+        opacity: .93;
+        height: 20px;
+        margin-left: -10px;
+        }   
+    .nav-links  {
+        margin-top: -88px;
+        margin-left: 51px;
+    }
+        
+    .logo { 
+        display: none;
+        width: 65%;
+    }
+    .mobile-logo{
+        display:inline-block;
+    }
+   .column-1 {
+        font-size: 18px;
+        margin-top: 138px;
+    }
+    .column-3 {
+        font-size: 18px;
+    }
+    .column-2 {
+        margin-top: -324px;
+        position: fixed;}
+    a {
+        color: rgb(228, 228, 78);
+        text-decoration:none;
+        margin-right: 4px;
+        text-shadow: 1px 1px 0px #595959;
+        font-size: 22px;
+    }
+       
+    }
+    li {
+        font-size: 22px;
+    
+    }
+    ul {
+        margin-bottom: 27px;
+        margin-top: -6px;
+        list-style: none;
+    }
+    h3.second-heading {
+        display: none;}
+    
+    
+
+
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 767px) 
+ {
+    /* Styles */
+    .column-1, .column-3 {
+        -webkit-column-count: 3; /* Chrome, Safari, Opera */
+        -moz-column-count: 3; /* Firefox */
+        column-count: 3;}
+    .column-2{
+        margin-left: -69px;
+        margin-top: -244px;
+    }
+        .logo{
+            max-width: 270px;
+            height: auto;
+            display: initial;
+            float: left;
+            overflow:auto;
+            margin-top: -38px}
+    
+        .mobile-logo
+        {
+            display: none
+        
+        }
+        .nav-links{
+            float: right;
+            margin-right: 35px;
+            margin-top: 0px;
+
+        
+        }
+    }
+
+
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1224px) {
+    /* Styles */
+   
+    }
+    
