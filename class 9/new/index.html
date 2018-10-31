@@ -7,23 +7,32 @@
   <link href="https://fonts.googleapis.com/css?family=Codystar" rel="stylesheet">
   </head>
   <body>
-  <div class="container">
-
-        <p id="myP" style="display:none">All the equipment and instruments are alive.</p>
-
-        <button type="button" onclick="document.getElementById('myP').style.display='block'">Click</button>
-
-
-        <button type="button" onclick="myFunction()">Click2</button>
-       
-    <script>
-        function myFunction() {
-        document.getElementById("myP").style.fontFamily = "'Codystar',sans-serif";
-        }
-        
-
+    <div class="container">
+      <p id="myP" style="display:none">All the equipment and instruments are alive.</p>
       
-      </script>
+      <button type="button" onclick="showParagraph()">Click</button>
+      
+      <button type="button" onclick="updateFont()">Click2</button>
+      <button type="button" onclick="doAll()">Click3</button>
   </div>
+
+  <script>
+    var paragraph = document.getElementById("myP");
+
+    function showParagraph(){
+      paragraph.style.display='block';
+      paragraph.style.backgroundColor = "black";
+      paragraph.style.color = "white";
+    }
+
+    function updateFont() {
+      paragraph.style.fontFamily = "'Codystar',sans-serif";
+    }
+
+    function doAll(){
+      showParagraph();
+      updateFont();
+    }
+  </script>
   </body>
 </html>
