@@ -2,43 +2,47 @@
 /* CSS Document */
 
 body {
-  font-family: 'Cutive Mono', monospace;
-}
+  font-family: 'ubuntu','Cutive Mono', monospace;
+  }
 
 h1, h2 {
- 
-}
-
-h1, h2, p {
-  line-height: 20px;
-}
+  font-family: 'cutive mono', monospace;
+  }
 
 h1 {
-  font-size: 40px; 
-  font-weight: bold; 
-}
+  font-size: 35px; 
+  font-weight: 800; 
+  background-color: rgba(255, 00, 00, .8);
+  margin-left:-6px;
+  margin-right: -10px;
+  line-height: 30px;
+  }
 
 h2 {
-  font-size: 30px;
-}
+  font-size: 27px;
+  line-height: 27px;
+  }
 
 p {
-  font-size: 20px;
+  font-size: 18px;
   columns: 100px 2;
-}
+  line-height: 25px;
+  }
 
 p::first-letter {
-  font-size: 30px;
-  font-family: cursive;
-}
+  font-size: 35px;
+  font-family: 'cutive mono', monospace;   }
 
-p::first-line {
-  background-color: palegoldenrod;
-}
-
-
+  
+/*for screens larger than 768px*/
 @media only screen and (min-width: 768px) {
   p { 
-    columns: 150px 4;
+    columns: 120px 4;
+  }
+  h1 {
+    font-size: 39px;
+  }
+  h2 {
+    font-size: 33;
   }
 }
