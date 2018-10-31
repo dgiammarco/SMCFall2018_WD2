@@ -31,7 +31,8 @@ p {
 
 p::first-letter {
   font-size: 35px;
-  font-family: 'cutive mono', monospace;   }
+  font-family: 'cutive mono', monospace; 
+  text-shadow: 1px,1px;  }
 
   
 /*for screens larger than 768px*/

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>title</title>
+  <link rel="stylesheet" href="stylesheet.css" type="text/css">
+  </head>
+  <body>
+
+  <h1 id="docHeader"> hello, World</h1>
+    <div class="button-contaoner">
+        <button onclick="showHeader()">Show Header!</button>
+        <button onclick="hideHeader()" id="hideButton">Hide Header!</button>
+    </div>
+
+    <p id="message"></p>
+
+    <script>
+        var header = document.getElementById("docHeader");
+        
+        function showHeader(){
+            console.log(header.style.visibility);
+            header.style.visibility = "visible";
+            document.getElementById("message").innerText = "";
+
+            if(header.style.visibility= "visable"){
+                document.getElementById("showButton").setAttribute("disabled", "disabled");
+                document.getElementById("message").innerText = "The header is already shown";
+            }
+            header.style.visibility="visable";
+        }
+        function hideHeader(){
+            console.log(header.style.visibility);
+            if (header.style.visibility === "hidden"){
+                document.getElementById("hideButton").setAttribute("disabled", "disabled");
+                document.getElementById("message").innerText = "The header is already hidden";
+
+            }
+            header.style.visibility = "hidden";    
+        }
+    </script>
+        
+  </body>
+</html>
