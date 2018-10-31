@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Codystar');
+
+.container {
+    height: 540px;
+    width: 640px;
+    background-color: darkseagreen;
+    padding-left: 15px;
+}
+.myP {
+    font-family: 'Codystar', sans-serif;
+    font-size: 575em;
+}
+p {
+    font-size: 65px;
+}

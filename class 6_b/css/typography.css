@@ -7,4 +7,26 @@ h1 , h2 , h3 {
     }
 p {
     font-family: 'PT Sans', sans-serif;
+    margin-top: -12px;
+}
+.column-1, .column-3{
+    letter-spacing: .3px;
+}
+.column-3{
+    
+}
+a {
+    color:#545252;
+    font-weight: 600;
+    text-decoration:none;
+    margin-right: 4px;
+    text-shadow: 1px 1px 0px rgb(228, 228, 78);
+    font-size: 22px;
+}
+
+@media only screen and (min-device-width : 767px)
+{
+    h3.second-heading {
+        margin-top: 51px;
+    }
 }

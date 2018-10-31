@@ -1,0 +1,44 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+  font-family: 'Cutive Mono', monospace;
+}
+
+h1, h2 {
+ 
+}
+
+h1, h2, p {
+  line-height: 20px;
+}
+
+h1 {
+  font-size: 40px; 
+  font-weight: bold; 
+}
+
+h2 {
+  font-size: 30px;
+}
+
+p {
+  font-size: 20px;
+  columns: 100px 2;
+}
+
+p::first-letter {
+  font-size: 30px;
+  font-family: cursive;
+}
+
+p::first-line {
+  background-color: palegoldenrod;
+}
+
+
+@media only screen and (min-width: 768px) {
+  p { 
+    columns: 150px 4;
+  }
+}
