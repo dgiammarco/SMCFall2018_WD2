@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <style>
+        #message
+        {
+        display: block;
+        color: orangered;
+        }
+        p {
+        display: inline-block;
+        text-align: justify;
+        text-justify: inter-word;
+        color: darkslategray 
+        }
+        #containerA {
+        display: inline-block;
+        width: 100%;
+        height: 25px;
+        padding: 0px 0;
+        text-align: center;
+        background-color:gray;
+        position: relative;
+        margin-top: 40px;
+        z-index: -1;
+        }
+        #containerB {
+        width: 100%;
+        padding: 14px 0;
+        text-align: center;
+        background-color:mistyrose;
+        margin-top: -58px;
+        z-index: 1;
+        }
+        #containerC {
+        width: 300px;
+        height: 500px;
+        position: relative;
+        background: rebeccapurple;
+        }
+        #anAnimation {
+        width: 30px;
+        height: 50px;
+        position: absolute;
+        background-color: orangered;
+        }
+        </style>
+</head>
+<body>
+    <button onclick="toggleDiv()">Click</button>
+    
+    <button  onclick="showBorder()" id=showBorder>Show Border</button>
+    <button  onclick="hideBorder()" id=hideBorder>Hide Border</button>
+    <p id="message"></p>
+    <div id="container">
+        
+        <div id="containerA"></div>
+        <div id="containerB">
+            <p>This is my DIV element.</p>
+        </div> 
+    </div>
+        <p>
+            <button onclick="movement()">Click Me</button> 
+        </p>
+        
+        <div id ="containerC">
+        <div id ="anAnimation"></div>
+        </div>
+   
+    <script>
+        function toggleDiv() {
+        var x = document.getElementById("containerB");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } 
+        else {
+            x.style.display = "none";
+        }
+        }
+        function showBorder() {
+        var dot = document.getElementById('containerB').style.borderStyle='dotted'
+        document.getElementById("message").innerText = "";
+        document.getElementById("showBorder").removeAttribute("disabled");
+        if(document.getElementById('containerB').style.borderStyle === "dotted"){
+            document.getElementById("showBorder").setAttribute("disabled", "disabled");
+            document.getElementById("message").innerText = "Your mouse is working!";
+            }
+            dot.style.borderStyle === "dotted"
+        }
+        function hideBorder() {
+            var none =document.getElementById('containerB').style.borderStyle='none'
+        document.getElementById("message").innerText = "";
+        document.getElementById("showBorder").removeAttribute("disabled");
+        if(document.getElementById('containerB').style.borderStyle === "none"){
+        document.getElementById("hideBorder").setAttribute("disabled", "disabled");
+        document.getElementById("message").innerText = "The border is already hidden!";
+            }
+            none.style.borderStyle='none';
+      
+        }
+       
+        function movement() {
+        var elem = document.getElementById("anAnimation");   
+        var pos = 0;
+        var id = setInterval(frame, 10);
+        function frame() {
+        if (pos == 350) {
+            clearInterval(id);
+        } 
+        else {
+            pos++; 
+            elem.style.bottom = pos + 'px'; 
+            elem.style.left = pos + 'px'; 
+        }
+        }
+        }
+    </script>
+    
+</body>
+</html> 

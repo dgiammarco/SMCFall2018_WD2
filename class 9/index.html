@@ -1,75 +1,89 @@
-<!DOCTYPE <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Class 9 Assignment
-    </title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
+        <script src="https://js.cx/libs/animate.js"></script>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Page Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  <style>
+    #message {
+      color: rgb(230, 109, 109);
+    }
+      #textarea {
+  display: block;
+  border: 1px solid #BBB;
+  color: #444;
+  font-size: 110%;
+}
+
+button {
+  margin-top: 10px;
+}
+    }
+  </style>
 </head>
 <body>
-
-        <h2>What Can JavaScript Do?</h2>
-
-        <p>JavaScript can show hidden HTML elements.</p>
+  <h1 id="docHeader">Hello, World!</h1>
+  
+  <div class="button-container">
+    <button onclick="showHeader()" id="showButton">Show Header!</button>
+    <button onclick="hideHeader()" id="hideButton">Hide Header!</button>
+  </div>
+  <p id="message"></p>
+  
         
-        <p id="demo" style="display:none">Hello JavaScript!</p>
-        <script>
-            <button type="button" onclick="document.getElementById('demo').style.display='block'">Click Me!
-        </button>
-        </script>
-        
-        <button>press me</button>
-        <div class="button-container">
-            <button onclick="changeMyText()">Change Text</button>
-            <button onclick="changeMyColor()">Change Color</button>
-        </div>
-    </script>
+  <script>
+    var header = document.getElementById("docHeader");
+    function showHeader(){
+      document.getElementById("message").innerText = "";
+      document.getElementById("hideButton").removeAttribute("disabled");
+      if(header.style.visibility === "visible"){
+        document.getElementById("showButton").setAttribute("disabled", "disabled");
+        document.getElementById("message").innerText = "Your mouse is working!";
+      }
+      header.style.visibility = "visible";
+      console.log(showHeader);
+    }
+    function hideHeader(){
+      document.getElementById("message").innerText = "";
+      document.getElementById("showButton").removeAttribute("disabled");
+      if(header.style.visibility === "hidden"){
+        document.getElementById("hideButton").setAttribute("disabled", "disabled");
+        document.getElementById("message").innerText = "The header is already hidden!";
+      }
+      header.style.visibility = "hidden";
+      console.log(hideHeader);
+    }
     
-    <h1 id="docHeader">Goodbye Sky!</h1>
-    <script>
+  <button onclick="animateText(textExample)">Run the animated typing!</button>
 
-        // const button = document.querySelector('button');
 
-        // button.onclick = function() {
-        // let name = prompt('What is your name?');
-        // alert('Hello ' + name + ', nice to see you!');
-        // }
-        var docHeader = document.getElementById("docHeader");
+    function animateText(textArea) {
+      let text = textArea.value;
+      let to = text.length,
+        from = 0;
 
-        var changeMyText = function(){
-            //this is header text
-            var myText = "Hello, Sky!";
-            
-            docHeader.innerHTML = myText;
+      animate({
+        duration: 5000,
+        timing: bounce,
+        draw: function(progress) {
+          let result = (to - from) * progress + from;
+          textArea.value = text.substr(0, Math.ceil(result))
         }
-        var changeMyColor = function(){
-            //this is the numarical value for header font size and color
-            var red = Math.random()*255;
-            var green = Math.random()*255;
-            var blue = Math.random()*255;
-            
-            var RGBval = "rgb(" + red + ", " + green + "," + blue + ")";
-            docHeader.style.color = RGBval;
+      });
+    }
 
-            
+
+    function bounce(timeFraction) {
+      for (let a = 0, b = 1, result; 1; a += b, b /= 2) {
+        if (timeFraction >= (7 - 4 * a) / 11) {
+          return -Math.pow((11 - 6 * a - 11 * timeFraction) / 4, 2) + Math.pow(b, 2)
         }
-        
-        
-       
-        
-        
-        console.log(RGBval);var myTextSize = 135;
-        
-        console.log(docHeader);
-        
-        
-        docHeader.style.fontSize = myTextSize + "px";
-        //docHeader.style.color="#ff0fff";
-         //"rgb( + red +, 0, 255)
-
-    </script>
+      }
+    }
+  
+  </script>
 </body>
-</html>
+</html> 

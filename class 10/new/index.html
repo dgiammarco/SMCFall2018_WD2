@@ -1,0 +1,63 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Class 9 Assignment
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+
+        <p id="demo" style="display:none">Hello JavaScript!</p>
+        <script>
+            <button type="button" onclick="document.getElementById('demo').style.display='block'">Generate
+        </button>
+        </script>
+        
+        <div class="button-container">
+            <button onclick="changeMyText()">Change Text</button>
+            <button onclick="changeMyColor()">Change Color</button>
+        </div>
+        </script>
+    
+    <h1 id="docHeader">Goodbye Sky!</h1>
+        <script>
+        var docHeader = document.getElementById("docHeader");
+
+        var changeMyText = function(){
+            //this is header text
+            var myText = "Hello, Sky!";
+            
+            docHeader.innerHTML = myText;
+        }
+        var changeMyColor = function(){
+            //this is the numarical value for header font size and color
+            var red = Math.random()*255;
+            var green = Math.random()*255;
+            var blue = Math.random()*255;
+            
+            var RGBval = "rgb(" + red + ", " + green + "," + blue + ")";
+            docHeader.style.color = RGBval;
+
+            
+        }
+        
+        
+       
+        
+        
+        console.log(RGBval);var myTextSize = 135;
+        
+        console.log(docHeader);
+        
+        
+        docHeader.style.fontSize = myTextSize + "px";
+        //docHeader.style.color="#ff0fff";
+         //"rgb( + red +, 0, 255)
+
+    </script>
+</body>
+</html>
