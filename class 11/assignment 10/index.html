@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+    <style>
+        #message
+        {
+        display: block;
+        color: orangered;
+        }
+        p {
+        display: inline-block;
+        text-align: justify;
+        text-justify: inter-word;
+        color: darkslategray 
+        }
+        #containerA {
+        display: inline-block;
+        width: 100%;
+        height: 25px;
+        padding: 0px 0;
+        text-align: center;
+        background-color:gray;
+        position: relative;
+        margin-top: 40px;
+        z-index: -1;
+        }
+        #containerB {
+        width: 100%;
+        padding: 14px 0;
+        text-align: center;
+        background-color:mistyrose;
+        margin-top: -58px;
+        z-index: 1;
+        }
+        #containerC {
+        width: 300px;
+        height: 500px;
+        position: relative;
+        background: rebeccapurple;
+        }
+        #anAnimation {
+        width: 30px;
+        height: 50px;
+        position: absolute;
+        background-color: orangered;
+        }
+        </style>
+    </head>
+    <body>
+        <button onclick="toggleDiv()" id="toggleDiv">Show Div</button>
+        <button  onclick="showBorder()" id=showBorder>Show Border</button>
+        <button  onclick="hideBorder()" id=hideBorder>Hide Border</button>
+        
+        <p id="message"></p>
+        
+        <div id="container">
+            <div id="containerA"></div>
+            <div id="containerB">
+                <p>This is my DIV element.</p>
+            </div> 
+        </div>
+            <p>
+                <button onclick="movement()">Click Me</button> 
+            </p>
+            
+        <div id ="containerC">
+            <div id ="anAnimation"></div>
+        </div>
+        <script>
+        $(document).ready(function(){
+            $('#toggleDiv').click(function(){
+                imageToggle();
+            });
+            $('#imgSwitch').click(function(){
+                imageSwitch();
+            });
+            var imageToggle = function(){
+                // see https://api.jquery.com/toggle-event/
+                $('.container').toggle();
+                // see https://api.jquery.com/css/
+                if($('.container').css('display') === 'none'){
+                    $('#toggleDiv').text("Show Div");
+                }
+                else {
+                    $('#toggleDiv').text("Hide Div");
+                }
+            }
+            var imageSwitch = function(){
+                // see https://api.jquery.com/toggle-event/
+                $('.page-img').toggle();
+            }
+        });
+        </script>
