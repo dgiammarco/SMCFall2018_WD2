@@ -1,0 +1,60 @@
+main {
+    max-width: 1260px;
+    /* margin: 0px auto;*/
+    background-color: floralwhite; 
+}
+.card-container  {
+    background-color: gold;
+    padding: 5px;
+}
+.card  {    
+    padding: 10px;
+}
+
+img  {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* .fullcard img {
+    width: 100%; */
+
+.clearfix  {
+    clear: both;
+}
+#show_hide  {
+    display: block;;
+    margin: 30px 30px; 
+    font-family: sans-serif;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 9px;
+    margin-bottom: 0px;
+ }
+ .photo1  {
+     
+ }
+
+/* Tablets ----------- */
+@media only screen and (min-width: 768px) {
+
+.card  {
+    display: inline-block;
+    width: 40%;
+    background-color: gold;
+    /* float: left; */
+    padding: 4%;
+
+}
+}
+
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1224px) {
+.card  {
+    display: inline-block;
+    width: 24.65%;
+    padding: 4.16666667%;
+}
+
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script>
+        
+        $(document).ready(function() {
+            $("#show_hide").click(function () {
+        $( ".photo1" ).toggle({
+                duration: 2300,
+            });
+        });  
+        });
+        
+        console.log(show_hide);
+        
+        </script>
+</head>
+<body>
+    <header>
+    </header>
+    <main>
+        <div class="card-container">
+            <div class="card">
+                <a href="#" id="show_hide">Show/Hide Image</a>
+                <img class="photo1" src="images/placeimg_300_300_animals.jpg" alt="animal">
+                
+            </div> 
+            <div class="card">
+                <img class="photo2" src="images/placeimg_300_300_people.jpg" alt="person">
+            </div>
+            <div class="card">
+                <img class="photo3" src="images/placeimg_300_300_arch.jpg" alt="archetecture">
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        
+    </main>
+    <footer>
+    </footer>
+</body>
+</html> 
