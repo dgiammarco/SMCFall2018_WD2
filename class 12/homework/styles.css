@@ -22,8 +22,8 @@ img  {
 .clearfix  {
     clear: both;
 }
-#show_hide  {
-    display: block;;
+.show  {
+    display: block;
     margin: 30px 30px; 
     font-family: sans-serif;
     text-align: center;
@@ -33,17 +33,17 @@ img  {
     margin-bottom: 0px;
  }
  .photo1  {
-     
+
  }
 
 /* Tablets ----------- */
 @media only screen and (min-width: 768px) {
 
 .card  {
-    display: inline-block;
+    display: block;
     width: 40%;
     background-color: gold;
-    /* float: left; */
+    float: left;
     padding: 4%;
 
 }

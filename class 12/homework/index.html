@@ -10,12 +10,28 @@
         <script>
         
         $(document).ready(function() {
-            $("#show_hide").click(function () {
-        $( ".photo1" ).toggle({
+            $(".show_hide").click(function () {
+        $(".photo1").toggle({
                 duration: 2300,
             });
         });  
         });
+        $(document).ready(function() {
+            $(".show_hide2").click(function () {
+        $(".photo2").toggle({
+                duration: 2300,
+            });
+        });  
+        });
+        $(document).ready(function() {
+            $(".show_hide3").click(function () {
+        $(".photo3").toggle({
+                duration: 2300,
+            });
+        });  
+        });
+        // var photo = [".photo1", ".photo2", ".photo3"];
+        // document.getElementById("#show_hide").innerHTML = photo;
         
         console.log(show_hide);
         
@@ -27,14 +43,16 @@
     <main>
         <div class="card-container">
             <div class="card">
-                <a href="#" id="show_hide">Show/Hide Image</a>
+                <a href="#" class="show show_hide">Show/Hide Image</a>
                 <img class="photo1" src="images/placeimg_300_300_animals.jpg" alt="animal">
                 
             </div> 
             <div class="card">
+                <a href="#" class="show show_hide2">Show/Hide Image</a>
                 <img class="photo2" src="images/placeimg_300_300_people.jpg" alt="person">
             </div>
             <div class="card">
+                <a href="#" class="show show_hide3">Show/Hide Image</a>
                 <img class="photo3" src="images/placeimg_300_300_arch.jpg" alt="archetecture">
             </div>
             <div class="clearfix"></div>
