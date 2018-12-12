@@ -9,36 +9,32 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
-.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
-.fa-anchor,.fa-book {font-size:200px}
-</style>
+
 <body>
 
 <!-- Navbar -->
 <div class="w3-top">
-  <div class="w3-bar w3-red w3-card w3-left-align w3-large">
-    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="hamBurger()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-white">
-      <img src="images/logo.png" alt="logo" width="180px">
-    </a>
-    <a href="about.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">About Us</a>
-    <a href="blog.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Blog</a>
-    <a href="donate.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-green">Donate</a>
+    <div class="w3-bar w3-teal w3-card w3-left-align w3-large">
+      <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-teal" href="javascript:void(0);" onclick="hamBurger()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+      <a href="index.html" class="w3-bar-item w3-button w3-padding-small w3-white">
+        <img src="images/logo.png" alt="logo" width="132px">
+      </a>
+      <a href="about.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">About Us</a>
+      <a href="blog.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Blog</a>
+      <a href="donate.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-green">Donate</a>
+    </div>
+  
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+      <a href="about.html" class="w3-bar-item w3-button w3-padding-large">About Us</a>
+      <a href="blog.html" class="w3-bar-item w3-button w3-padding-large">Blog</a>
+      <a href="donate.html" class="w3-bar-item w3-button w3-padding-large w3-hover-green">Donate</a>
+    </div>
   </div>
-
-  <!-- Navbar on small screens -->
-  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
-    <a href="about.html" class="w3-bar-item w3-button w3-padding-large">About Us</a>
-    <a href="blog.html" class="w3-bar-item w3-button w3-padding-large">Blog</a>
-    <a href="donate.html" class="w3-bar-item w3-button w3-padding-large w3-hover-green">Donate</a>
-  </div>
-</div>
 
 <!-- Header -->
-<header class="w3-container w3-red w3-center" style="padding:0px 0px">
-    <img src="images/books.jpg" width="1000px">
+<header class="w3-container w3-teal w3-center" style="padding:0px 0px">
+    <img class="w3-image"src="images/books.jpg" width="1440px">
   </header>
   
 
@@ -47,21 +43,19 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
   <div class="w3-content">
     <div class="w3-twothird">
       <h1>Make America Great</h1>
-      <h5 class="w3-padding-32">Reading to Kids is a grassroots organization dedicated to inspiring underserved children with a love of reading, thereby enriching their lives and opportunities for future success.</h5>
+      <h5 class="w3-padding-32">Reading to Kids is a grassroots organization dedicated to inspiring underserved children with a love of reading.</h5>
 
-      <p class="w3-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-        laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <p class="w3-text-grey">Through our various programs and partnerships, we provide opportunities for children and their families to experience the life-changing impact of reading. Reading is the fundamental building block to all life’s essential skills. We invite you to explore our program options for bringing books and literacy resources to children at home, in the classroom, and in the community.</p>
     </div>
 
     <div class="w3-third w3-center w3-padding-64 w3-container">
-      <img src="images/blog4.jpg"  >
+      <img src="images/blog1.jpg"  >
     </div>
   </div>
 </div>
 
 <!-- Second Grid -->
-<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+<!-- <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
   <div class="w3-content">
     <div class="w3-third w3-center">
       <i class="fa fa-book w3-padding-64 w3-text-red w3-margin-right"></i>
@@ -76,33 +70,33 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
         laboris nisi ut aliquip ex ea commodo consequat.</p>
     </div>
   </div>
-</div>
+</div> -->
 
-<div class="w3-row-padding"> 
+<div class="blog-preview w3-row-padding"> 
 
     <div class="w3-third">
     <div class="w3-card">
-      <img src="images/blog1.jpg" alt="Car" style="width:100%">
+      <img src="images/littleboy.jpg" alt="child with snowflake" style="width:100%">
       <div class="w3-container">
-      <p>Blog post 1</p>
+      <p>Ways to Give</p>
       </div>
     </div>
     </div>
     
     <div class="w3-third">
     <div class="w3-card-4">
-      <img src="images/blog2.jpg" alt="Car" style="width:100%">
+      <img src="images/volunteer.jpg" alt="volunteer and child" style="width:100%">
       <div class="w3-container">
-      <p>Blog post 2</p>
+      <p>Volunteer Program</p>
       </div>
     </div>
     </div>
     
     <div class="w3-third">
     <div class="w3-card-4">
-      <img src="images/blog3.jpg" alt="Car" style="width:100%">
+      <img src="images/blog3.jpg" alt="boy reading" style="width:100%">
       <div class="w3-container">
-      <p>Blog post 3</p>
+      <p>Literacy Central</p>
       </div>
     </div>
     </div>
@@ -122,7 +116,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
     <i class="fa fa-twitter w3-hover-opacity"></i>
     <i class="fa fa-linkedin w3-hover-opacity"></i>
  </div>
- <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+ 
 </footer>
 
 <script>

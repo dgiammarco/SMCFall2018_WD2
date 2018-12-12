@@ -1,6 +1,37 @@
-.w3-top {
-    color: aqua
+
+body,h2,h3,h4,h5,h6 {
+    font-family: "Lato", sans-serif}
+
+.w3-bar,h1,button {
+    font-family: "Montserrat", sans-serif}
+
+
+.blog-preview  {
+    padding-bottom: 40px;
 }
-h1 {
-    font-family: "Lato";
+.donate-image {
+
+   
+    min-width: 400px;
+    padding-left: 20px;
+    padding-right: 10px;
+}
+
+@media screen and (min-width: 601px) {
+    
+    .donate-image {
+    
+        padding-top: 66px;
+        min-width: 291px;
+        padding-left: 20px;
+        padding-right: 10px;
+
+    }
+    .w3-bar {
+        max-width: 1440px;
+        vertical-align: middle;
+    }
+   .padtop{
+       padding-top: 50px;
+   }
 }
